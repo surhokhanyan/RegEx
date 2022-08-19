@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="CSS/mixins.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="conatiner">
+        <div id="containerInside">
+            <h3>Farmer Registration Form</h3>
+            <div id="nameDiv">
+                <label for="name" id="nameLabel">Name</label>
+                <div id="nameDivFirst">
+                    <input type="text" class="small" id="firstName" placeholder="First">
+                    <p>First letter must be a capital, and you can't use space</p>
+                </div>
+                <div id="nameDivLast">
+                    <input type="text" class="small" id="lastName" placeholder="Last">
+                    <p>First letter must be a capital</p>
+                </div>
+            </div>
+            <div id="emailDiv">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <p>Please write a valid Email</p>
+            </div>
+            <div id="websiteDiv">
+                <label for="web">Web Site Link</label>
+                <input type="text" id="webSite">
+                <p>Please write a valid WebSite link</p>
+            </div>
+            <div id="centerNameDiv">
+                <label for="centerName">Company Name</label>
+                <input type="text" id="companyName">
+                <p>First letter must be a capital and you can't use characters</p>
+            </div>
+            <div id="centerNoDiv">
+                <label for="centerNO">Zip Code</label>
+                <input type="text" id="zipCode">
+                <p>ZipCode contain only numbers and one - character</p>
+            </div>
+            <div id="phoneDiv">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="+########">
+                <p>Write contry code using +, then before number use space</p>
+            </div>
+            <div id="farmerAddressDiv">
+                <label for="farmerAddress">Farmer Address</label>
+                <input type="text" placeholder="Street Address" id="address">
+                <p>you can use only ".", "/" or "-" characters</p>
+            </div> 
+            <div id="usernameDIv">
+                <label for="username">Username</label>
+                <input type="text" id="username">
+                <p>username must contain, lower case, numbers and ./-_ can't use space</p>
+            </div>
+            <div id="passwordDiv">
+                <label for="password">Password</label>
+                <input type="text" id="password">
+                <p>Password must contain capital letter, and character</p>
+            </div>
+            <button id="btn">SEND</button>
+        </div>
+    </section>
+    <!-- JS link -->
+    <script src="JS/script.js"></script>
+</body>
+</html>

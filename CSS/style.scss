@@ -1,0 +1,109 @@
+@import "mixins";
+
+// delete default settings
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#conatiner{
+    @include size(100%, 1300px);
+    background-color: #96f0d8;
+    @include flexCenter();
+    #containerInside{
+        @include size(600px, 1200px);
+        background-color: #DDF4EE;
+        @include flDownBetween();
+        h3{
+            font-size: 48px;
+            color: #2A5537;
+            font-weight: bold;
+        }
+        #nameDiv{
+            @include size(95%, 100px);
+            @include flexBetween();
+            flex-wrap: wrap;
+            #nameDivFirst{
+                @include size(270px, 65px);
+                @include flDownAround();
+            }
+            #nameDivLast{
+                @include size(270px, 65px);
+                @include flDownAround(); 
+            }
+        }
+        #emailDiv{
+            @include size(95%, 100px);
+            @include flDownAround();
+        }
+        #websiteDiv{
+            @include size(95%, 100px);
+            @include flDownAround();
+        }
+        #centerNameDiv{
+            @include size(95%, 100px);
+            @include flDownAround(); 
+        }
+        #centerNoDiv{
+            @include size(95%, 100px);
+            @include flDownAround(); 
+        }
+        #phoneDiv{
+            @include size(95%, 100px);
+            @include flDownAround();
+        }
+        #farmerAddressDiv{
+            @include size(95%, 100px);
+            @include flDownAround();
+        }
+        #usernameDIv{
+            @include size(95%, 100px);
+            @include flDownAround();
+        }
+        #passwordDiv{
+            @include size(95%, 100px);
+            @include flDownAround();
+        }
+        label{
+            width: 100%;
+            font-size: 24px;
+            color: #70987C;
+            font-weight: bold;
+
+        }
+        input{
+            @include size(560px, 50px);
+            outline: none;
+            border-radius: 20px;
+            border: 2px solid #8FA599;
+            padding-left: 10px;
+            font-size: 20px;
+            color: #9DAFA3;
+            position: relative;
+        }
+        p{
+            margin-top: 2px;
+            font-size: 12px;
+            color: red;
+            display: none;
+        }
+        .small{
+            @include size(260px, 50px);
+        }
+        #btn{
+            @include size(200px, 50px);
+            background-color:#23622B ;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            color: white;
+            transition: all ease-in .5s;
+        }
+        #btn:hover{
+            border: 2px solid #23622B;
+            background-color: white;
+            color: #23622B;
+        }
+    }
+}
